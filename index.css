@@ -1,3 +1,8 @@
+/*  Looks like an added reset
+    Lots of utility class, but these styles could have been on the cell classes as well
+    Lots of vendor prefixes
+    is this preprocessor output? various styles of formatting
+ */
 *{margin:0;padding:0;}
 article, aside, audio, canvas, command, datalist, details,embed, figcaption, figure, footer, header, hgroup, keygen,mark, meter, nav, output, progress, rp, rt, ruby, section,source, summary, time, video, wbr {display:block;}
 a{outline:none;text-decoration:none;color:#F00;font-size:16px;line-height:22px;}
