@@ -1,0 +1,18 @@
+input{width:90%;}
+input[disabled]{background-color:#999;color:#CCC;}
+input[disabled]:hover{background-color:#999;color:#CCC;}
+
+/*///////////////////////////
+BOWLING SCORE MODEL
+///////////////////////////*/
+.wrapper{}
+.bowlingScore{width:700px;margin:0 auto;border:none;}
+.bowlingScore .header{border-bottom:none;}
+.bowlingScore .header > div {border-top:solid 1px #000;border-bottom:solid 1px #000;text-align:center;padding:5px 0;font-size:16px;font-weight:bold;background-color:#CCC;}
+.bowlingScore .section > div{height:100px;border-bottom:solid 1px #000;background-color:#FFF;}
+.flexBox > div{width:100px;border-right:solid 1px #000;float:left;}
+.flexBox > div:first-child{border-left:solid 1px #000;}
+.flexBox > div.bigBox{width:146px;}
+.bowlingScore .aside{width:70px;height:35px;float:right;border-left:solid 1px #000;border-bottom:solid 1px #000;}
+.bowlingScore .aside div{width:35px;height:35px;border:none;}
+.bowlingScore .aside div:first-child{border-right:solid 1px #000;width:34px;}

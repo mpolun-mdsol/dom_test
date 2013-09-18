@@ -1,0 +1,100 @@
+*{margin:0;padding:0;}
+article, aside, audio, canvas, command, datalist, details,embed, figcaption, figure, footer, header, hgroup, keygen,mark, meter, nav, output, progress, rp, rt, ruby, section,source, summary, time, video, wbr {display:block;}
+a{outline:none;text-decoration:none;color:#F00;font-size:16px;line-height:22px;}
+a:hover{color:#690;}
+a.button{text-align:center;padding:20px;display:block;font-size:25px;line-heignt:31px;color:#FFF;background-color:#F00;margin:0 10%;text-transform:uppercase;margin-bottom:20px;}
+a.button:hover{background-color:#690;}
+img{border:none;}
+*:focus{outline:none;}
+table {border-collapse:collapse;border-spacing:0;}
+html{background-color:#FFFFFF;}
+body{font-family:Arial, Helvetica, sans-serif;font-size:12px;line-height:18px;font-weight:normal;}
+h1{font-size:20px;line-height:26px;padding:0 20px;margin:0;text-transform:uppercase;}
+ul{padding:0 20px}
+li{padding-top:5px;list-style-type:none;font-size:16px;line-height:22px;}
+p{color:#F00;font-weight:bold;font-size:14px;line-height:20px;}
+form{width:50%;background-color:#CCC;padding:5%;margin:0 auto;}
+input{display:block;font-size:24px;line-height:30px;color:#000;padding:10px 20px;width:100%;margin-top:15px;  border:solid 2px #BFBFBF;
+-webkit--box-sizing:border-box;
+-moz-box-sizing:border-box;
+-ms-box-sizing:border-box;
+-o-box-sizing:border-box;
+box-sizing:border-box;
+}
+input:nth-child(1){margin-top:0;}
+input[type=submit]{background-color:#333;color:#FFF;border:none;margin-top:20px;width:auto;padding:10px 20px;cursor:pointer;border-radius:0;box-sizing:border-box;}
+input[type=submit]:hover{background-color:#000;}
+input[type=submit]:disabled{background-color:#999;color:#CCC;}
+input.fieldError{border-color:#F00;}
+input.placeholder{font-style:italic;color:#CCC;}
+.wrapper{width:980px;margin:40px auto;}
+#listInput{position:absolute;left:200px;top:200px;width:50%;background-color:#CCC;padding:5%;}
+#listInput form{width:100%;padding:0;}
+.displayNone{display:none;}
+
+/*///////////////////////////
+BOWLING SCORE MODEL
+///////////////////////////*/
+.bowlingScore{width:70%;margin:0 auto;border:solid 1px #000;}
+.bowlingScore .header{background-color:#CCC;border-bottom:solid 1px #000;}
+.bowlingScore .section{background-color:#FFF;}
+.bowlingScore .header > div {text-align:center;padding:5px 0;font-size:16px;font-weight:bold;}
+.bowlingScore .section > div{height:100px;}
+.bowlingScore .aside{width:70%;height:35px;float:right;border-left:solid 1px #000;border-bottom:solid 1px #000;}
+.flexBox{
+	display: -ms-flexbox;
+	display: -webkit-box;	 	
+    display: -webkit-flex;	
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+    -webkit-flex-direction: row;	
+    -moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+    flex-direction: row;
+}
+
+.flexBox > div{
+	width:10px;
+	border-right:solid 1px #000;
+	display:block;
+	-webkit-box-flex: 1; 
+    -webkit-flex: 1 1 auto;
+	-moz-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-o-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+.flexBox > div:first-child, .flexBox > div:last-child{
+	display:block;
+	-webkit-box-flex: 2; 
+    -webkit-flex: 1.5 1 auto;
+	-moz-flex: 1.5 1 auto;
+	-ms-flex: 1.5 1 auto;
+	-o-flex: 1.5 1 auto;
+	flex: 1.5 1 auto;
+}
+.bowlingScore .flexBox > div:last-child{border:none;}
+
+@media screen and (max-width:980px){
+  .wrapper{width:100%;margin:40px auto;}
+  form{width:60%;}
+  .bowlingScore{width:70%;}
+}
+
+@media screen and (max-width:768px){
+  form{width:70%;}
+  .bowlingScore{width:80%;}
+}
+
+@media screen and (max-width:480px){
+  form{width:80%;}
+  .bowlingScore{width:90%;}
+  .bowlingScore .header > div {line-height:42px;}
+  .bowlingScore .header > div:first-child, .bowlingScore .header > div:last-child{line-height:22px;}
+}
+
+
+
